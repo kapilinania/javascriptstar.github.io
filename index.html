@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <style>
+        .main1 {
+            border: 1px solid red;
+        }
+
+        .main1 .fa-star-o:hover::before {
+            content: "\f005";
+            color: #d56e0c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- <i class="fa fa-star fa-5x"></i> -->
+        <h1>Default Stage is here</h1>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+    </div>
+    <div class="main1">
+        <h1>Second Stage is here (when on click background-color will be changed)</h1>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+        <i class="fa fa-star-o fa-5x"></i>
+
+    </div>
+    <div class="main2">
+        <h2>Third Stage is here</h2>
+        <button id="btn"><i class="fa fa-star-o fa-5x"></i></button>
+        <p> You're Clicked <span id="clicked"></span></p>
+    </div>
+    <script>
+        let a = 0;
+        let b = document.getElementById("btn");
+        let c = document.getElementById("clicked");
+        b.onclick = function (){
+            a++;
+            clicked.innerHTML =a;
+        }
+    </script>
+
+</body>
+
+</html>
